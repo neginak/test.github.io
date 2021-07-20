@@ -1,0 +1,123 @@
+html{
+    font-family: 'Quicksand', sans-serif;
+    color: #1a1a1a;
+}
+
+.background{
+   /* background: #d8d8d8;*/
+   background: rgba(216,216,216,0.7);
+}
+
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1{
+    margin:0px;
+    padding: 15px;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+
+ul{
+    padding: 0px;
+}
+
+.journey-images{
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    min-height: 100vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-text{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+article, .sidebar-widget{
+    padding: 15px;
+    margin: 15px 0;
+}
+
+article > header{
+    background-color: #d8d8d8;
+}
+
+img{
+    width: 100%;
+}
+
+i{
+    margin: 0 5px;
+}
+
+a:hover{
+    color: blue;
+}
+
+td:nth-child(2){
+    padding-left: 30px;
+}
+@media (min-width:1000px){
+    body{
+        max-width: 1600px;
+        margin: 0px auto;
+    }
+
+    header{
+        flex-direction: row;
+    }
+
+    header li{
+        display: inline-block;
+    }
+
+    header h1,header nav{
+        flex: 1;
+    }
+
+    header h1{
+        text-align: left;
+    }
+
+    header nav{
+        text-align: right;
+    }
+    /* blog*/
+    .wrapper{
+        flex-direction: row;
+    }
+
+    main{
+        flex: 3;
+    }
+
+    aside{
+        flex: 1;
+        margin-left: 15px;
+    }
+
+    article > header{
+        justify-content: space-around;
+    }
+}
